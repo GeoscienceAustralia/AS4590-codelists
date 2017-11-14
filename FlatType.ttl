@@ -1,0 +1,336 @@
+@prefix : <http://reference.data.gov.au/def/ont/agrif#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <http://reference.data.gov.au/def/ont/flt> .
+
+<http://reference.data.gov.au/def/ont/flt> 
+    rdf:type owl:Ontology, voaf:Vocabulary ;
+    rdfs:label "AS4590 code list for flat types"@en ;
+    rdfs:comment "The AS4590 code list for flat types intended for implementing a standardised list of flat types and their abbreviations for Australia and New Zealand. It complies with the World Wide Web Consortiumâ€™s Web Ontology Language (OWL2) Recommendation."@en ;
+    dc:creator "Joseph Abhayaratna (PSMA Australia Limited)"@en ;    
+    dc:contributor "Nicholas Car"@en ;	
+    dcterms:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    dcterms:contributor <http://orcid.org/0000-0001-5075-6234> ;
+    dc:publisher "Australian Government Linked Data Working Group"@en ;
+    dcterms:publisher <http://linked.data.gov.au> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Intergovernmental Committee on Surveying and Mapping (ICSM)"@en ;
+    owl:versionInfo "0.1"@en ;
+    owl:versionIRI <http://reference.data.gov.au/def/ont/flt/0.1> ;
+    dcterms:created "2017-08-24"^^xsd:date ;
+    dcterms:modified "2017-08-24"@en ;
+    vann:preferredNamespaceUri "http://reference.data.gov.au/def/ont/flt#"^^xsd:string ;
+    vann:preferredNamespacePrefix "flt"@en .
+
+:Antenna rdf:type :FlatType ;
+	rdfs:label "Antenna"^^xsd:string ;
+	skos:altLabel "ANTENNA"^^xsd:string ;
+	skos:altLabel "ANT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Apartment rdf:type :FlatType ;
+	rdfs:label "Apartment"^^xsd:string ;
+	skos:altLabel "APARTMENT"^^xsd:string ;
+	skos:altLabel "APT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:AutomatedTellerMachine rdf:type :FlatType ;
+	rdfs:label "Automated Teller Machine"^^xsd:string ;
+	skos:altLabel "AUTOMATED TELLER MACHINE"^^xsd:string ;
+	skos:altLabel "ATM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Barbecue rdf:type :FlatType ;
+	rdfs:label "Barbecue"^^xsd:string ;
+	skos:altLabel "BARBECUE"^^xsd:string ;
+	skos:altLabel "BBQ"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Block rdf:type :FlatType ;
+	rdfs:label "Block"^^xsd:string ;
+	skos:altLabel "BLOCK"^^xsd:string ;
+	skos:altLabel "BLCK"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Boatshed rdf:type :FlatType ;
+	rdfs:label "Boatshed"^^xsd:string ;
+	skos:altLabel "BOATSHED"^^xsd:string ;
+	skos:altLabel "BTSD"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Building rdf:type :FlatType ;
+	rdfs:label "Building"^^xsd:string ;
+	skos:altLabel "BUILDING"^^xsd:string ;
+	skos:altLabel "BLDG"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Bungalow rdf:type :FlatType ;
+	rdfs:label "Bungalow"^^xsd:string ;
+	skos:altLabel "BUNGALOW"^^xsd:string ;
+	skos:altLabel "BNGW"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Cage rdf:type :FlatType ;
+	rdfs:label "Cage"^^xsd:string ;
+	skos:altLabel "CAGE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Carpark rdf:type :FlatType ;
+	rdfs:label "Carpark"^^xsd:string ;
+	skos:altLabel "CARPARK"^^xsd:string ;
+	skos:altLabel "CARP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Carspace rdf:type :FlatType ;
+	rdfs:label "Carspace"^^xsd:string ;
+	skos:altLabel "CARSPACE"^^xsd:string ;
+	skos:altLabel "CARS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Club rdf:type :FlatType ;
+	rdfs:label "Club"^^xsd:string ;
+	skos:altLabel "CLUB"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Coolroom rdf:type :FlatType ;
+	rdfs:label "Coolroom"^^xsd:string ;
+	skos:altLabel "COOLROOM"^^xsd:string ;
+	skos:altLabel "COOL"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Cottage rdf:type :FlatType ;
+	rdfs:label "Cottage"^^xsd:string ;
+	skos:altLabel "COTTAGE"^^xsd:string ;
+	skos:altLabel "CTGE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Duplex rdf:type :FlatType ;
+	rdfs:label "Duplex"^^xsd:string ;
+	skos:altLabel "DUPLEX"^^xsd:string ;
+	skos:altLabel "DUPL"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Factory rdf:type :FlatType ;
+	rdfs:label "Factory"^^xsd:string ;
+	skos:altLabel "FACTORY"^^xsd:string ;
+	skos:altLabel "FCTY"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Flat rdf:type :FlatType ;
+	rdfs:label "Flat"^^xsd:string ;
+	skos:altLabel "FLAT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Garage rdf:type :FlatType ;
+	rdfs:label "Garage"^^xsd:string ;
+	skos:altLabel "GARAGE"^^xsd:string ;
+	skos:altLabel "GRGE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Hall rdf:type :FlatType ;
+	rdfs:label "Hall"^^xsd:string ;
+	skos:altLabel "HALL"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:House rdf:type :FlatType ;
+	rdfs:label "House"^^xsd:string ;
+	skos:altLabel "HOUSE"^^xsd:string ;
+	skos:altLabel "HSE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Kiosk rdf:type :FlatType ;
+	rdfs:label "Kiosk"^^xsd:string ;
+	skos:altLabel "KIOSK"^^xsd:string ;
+	skos:altLabel "KSK"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Lease rdf:type :FlatType ;
+	rdfs:label "Lease"^^xsd:string ;
+	skos:altLabel "LEASE"^^xsd:string ;
+	skos:altLabel "LSE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Lobby rdf:type :FlatType ;
+	rdfs:label "Lobby"^^xsd:string ;
+	skos:altLabel "LOBBY"^^xsd:string ;
+	skos:altLabel "LBBY"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Loft rdf:type :FlatType ;
+	rdfs:label "Loft"^^xsd:string ;
+	skos:altLabel "LOFT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Lot rdf:type :FlatType ;
+	rdfs:label "Lot"^^xsd:string ;
+	skos:altLabel "LOT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Maisonette rdf:type :FlatType ;
+	rdfs:label "Maisonette"^^xsd:string ;
+	skos:altLabel "MAISONETTE"^^xsd:string ;
+	skos:altLabel "MSNT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:MarineBerth rdf:type :FlatType ;
+	rdfs:label "Marine Berth"^^xsd:string ;
+	skos:altLabel "MARINE BERTH"^^xsd:string ;
+	skos:altLabel "MBTH"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Office rdf:type :FlatType ;
+	rdfs:label "Office"^^xsd:string ;
+	skos:altLabel "OFFICE"^^xsd:string ;
+	skos:altLabel "OFFC"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Penthouse rdf:type :FlatType ;
+	rdfs:label "Penthouse"^^xsd:string ;
+	skos:altLabel "PENTHOUSE"^^xsd:string ;
+	skos:altLabel "PTHS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Rear rdf:type :FlatType ;
+	rdfs:label "Rear"^^xsd:string ;
+	skos:altLabel "REAR"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Reserve rdf:type :FlatType ;
+	rdfs:label "Reserve"^^xsd:string ;
+	skos:altLabel "RESERVE"^^xsd:string ;
+	skos:altLabel "RESV"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Room rdf:type :FlatType ;
+	rdfs:label "Room"^^xsd:string ;
+	skos:altLabel "ROOM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Section rdf:type :FlatType ;
+	rdfs:label "Section"^^xsd:string ;
+	skos:altLabel "SECTION"^^xsd:string ;
+	skos:altLabel "SEC"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Shed rdf:type :FlatType ;
+	rdfs:label "Shed"^^xsd:string ;
+	skos:altLabel "SHED"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Shop rdf:type :FlatType ;
+	rdfs:label "Shop"^^xsd:string ;
+	skos:altLabel "SHOP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Showroom rdf:type :FlatType ;
+	rdfs:label "Showroom"^^xsd:string ;
+	skos:altLabel "SHOWROOM"^^xsd:string ;
+	skos:altLabel "SHRM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Sign rdf:type :FlatType ;
+	rdfs:label "Sign"^^xsd:string ;
+	skos:altLabel "SIGN"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Site rdf:type :FlatType ;
+	rdfs:label "Site"^^xsd:string ;
+	skos:altLabel "SITE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Stall rdf:type :FlatType ;
+	rdfs:label "Stall"^^xsd:string ;
+	skos:altLabel "STALL"^^xsd:string ;
+	skos:altLabel "STLL"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Store rdf:type :FlatType ;
+	rdfs:label "Store"^^xsd:string ;
+	skos:altLabel "STORE"^^xsd:string ;
+	skos:altLabel "STOR"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:StrataUnit rdf:type :FlatType ;
+	rdfs:label "Strata Unit"^^xsd:string ;
+	skos:altLabel "STRATA UNIT"^^xsd:string ;
+	skos:altLabel "STR"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Studio rdf:type :FlatType ;
+	rdfs:label "Studio"^^xsd:string ;
+	skos:altLabel "STUDIO"^^xsd:string ;
+	skos:altLabel "STU"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Substation rdf:type :FlatType ;
+	rdfs:label "Substation"^^xsd:string ;
+	skos:altLabel "SUBSTATION"^^xsd:string ;
+	skos:altLabel "SUBS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Suite rdf:type :FlatType ;
+	rdfs:label "Suite"^^xsd:string ;
+	skos:altLabel "SUITE"^^xsd:string ;
+	skos:altLabel "SE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Tenancy rdf:type :FlatType ;
+	rdfs:label "Tenancy"^^xsd:string ;
+	skos:altLabel "TENANCY"^^xsd:string ;
+	skos:altLabel "TNCY"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Tower rdf:type :FlatType ;
+	rdfs:label "Tower"^^xsd:string ;
+	skos:altLabel "TOWER"^^xsd:string ;
+	skos:altLabel "TWR"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Townhouse rdf:type :FlatType ;
+	rdfs:label "Townhouse"^^xsd:string ;
+	skos:altLabel "TOWNHOUSE"^^xsd:string ;
+	skos:altLabel "TNHS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Unit rdf:type :FlatType ;
+	rdfs:label "Unit"^^xsd:string ;
+	skos:altLabel "UNIT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Vault rdf:type :FlatType ;
+	rdfs:label "Vault"^^xsd:string ;
+	skos:altLabel "VAULT"^^xsd:string ;
+	skos:altLabel "VLT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Villa rdf:type :FlatType ;
+	rdfs:label "Villa"^^xsd:string ;
+	skos:altLabel "VILLA"^^xsd:string ;
+	skos:altLabel "VLLA"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Ward rdf:type :FlatType ;
+	rdfs:label "Ward"^^xsd:string ;
+	skos:altLabel "WARD"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Warehouse rdf:type :FlatType ;
+	rdfs:label "Warehouse"^^xsd:string ;
+	skos:altLabel "WAREHOUSE"^^xsd:string ;
+	skos:altLabel "WHSE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+
+:Workshop rdf:type :FlatType ;
+	rdfs:label "Workshop"^^xsd:string ;
+	skos:altLabel "WORKSHOP"^^xsd:string ;
+	skos:altLabel "WKSH"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/flt> .
+

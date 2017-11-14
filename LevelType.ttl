@@ -1,0 +1,122 @@
+@prefix : <http://reference.data.gov.au/def/ont/agrif#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <http://reference.data.gov.au/def/ont/lvt> .
+
+<http://reference.data.gov.au/def/ont/lvt> 
+    rdf:type owl:Ontology, voaf:Vocabulary ;
+    rdfs:label "AS4590 code list for level types"@en ;
+    rdfs:comment "The AS4590 code list for level types intended for implementing a standardised list of level types and their abbreviations for Australia and New Zealand. It complies with the World Wide Web Consortiumâ€™s Web Ontology Language (OWL2) Recommendation."@en ;
+    dc:creator "Joseph Abhayaratna (PSMA Australia Limited)"@en ;    
+    dc:contributor "Nicholas Car"@en ;	
+    dcterms:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    dcterms:contributor <http://orcid.org/0000-0001-5075-6234> ;
+    dc:publisher "Australian Government Linked Data Working Group"@en ;
+    dcterms:publisher <http://linked.data.gov.au> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Intergovernmental Committee on Surveying and Mapping (ICSM)"@en ;
+    owl:versionInfo "0.1"@en ;
+    owl:versionIRI <http://reference.data.gov.au/def/ont/lvt/0.1> ;
+    dcterms:created "2017-08-24"^^xsd:date ;
+    dcterms:modified "2017-08-24"@en ;
+    vann:preferredNamespaceUri "http://reference.data.gov.au/def/ont/lvt#"^^xsd:string ;
+    vann:preferredNamespacePrefix "lvt"@en .
+
+:Basement rdf:type :LevelType ;
+	rdfs:label "Basement"^^xsd:string ;
+	skos:altLabel "BASEMENT"^^xsd:string ;
+	skos:altLabel "B"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Floor rdf:type :LevelType ;
+	rdfs:label "Floor"^^xsd:string ;
+	skos:altLabel "FLOOR"^^xsd:string ;
+	skos:altLabel "FL"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Ground rdf:type :LevelType ;
+	rdfs:label "Ground"^^xsd:string ;
+	skos:altLabel "GROUND"^^xsd:string ;
+	skos:altLabel "G"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Level rdf:type :LevelType ;
+	rdfs:label "Level"^^xsd:string ;
+	skos:altLabel "LEVEL"^^xsd:string ;
+	skos:altLabel "L"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Lobby rdf:type :LevelType ;
+	rdfs:label "Lobby"^^xsd:string ;
+	skos:altLabel "LOBBY"^^xsd:string ;
+	skos:altLabel "LB"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:LowerGroundFloor rdf:type :LevelType ;
+	rdfs:label "Lower Ground Floor"^^xsd:string ;
+	skos:altLabel "LOWER GROUND FLOOR"^^xsd:string ;
+	skos:altLabel "LG"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Mezzanine rdf:type :LevelType ;
+	rdfs:label "Mezzanine"^^xsd:string ;
+	skos:altLabel "MEZZANINE"^^xsd:string ;
+	skos:altLabel "M"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:ObservationDeck rdf:type :LevelType ;
+	rdfs:label "Observation Deck"^^xsd:string ;
+	skos:altLabel "OBSERVATION DECK"^^xsd:string ;
+	skos:altLabel "OD"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Parking rdf:type :LevelType ;
+	rdfs:label "Parking"^^xsd:string ;
+	skos:altLabel "PARKING"^^xsd:string ;
+	skos:altLabel "P"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Penthouse rdf:type :LevelType ;
+	rdfs:label "Penthouse"^^xsd:string ;
+	skos:altLabel "PENTHOUSE"^^xsd:string ;
+	skos:altLabel "PTHS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Platform rdf:type :LevelType ;
+	rdfs:label "Platform"^^xsd:string ;
+	skos:altLabel "PLATFORM"^^xsd:string ;
+	skos:altLabel "PLF"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Podium rdf:type :LevelType ;
+	rdfs:label "Podium"^^xsd:string ;
+	skos:altLabel "PODIUM"^^xsd:string ;
+	skos:altLabel "PDM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:Rooftop rdf:type :LevelType ;
+	rdfs:label "Rooftop"^^xsd:string ;
+	skos:altLabel "ROOFTOP"^^xsd:string ;
+	skos:altLabel "RT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:SubBasement rdf:type :LevelType ;
+	rdfs:label "Sub-Basement"^^xsd:string ;
+	skos:altLabel "SUB-BASEMENT"^^xsd:string ;
+	skos:altLabel "SB"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+
+:UpperGroundFloor rdf:type :LevelType ;
+	rdfs:label "Upper Ground Floor"^^xsd:string ;
+	skos:altLabel "UPPER GROUND FLOOR"^^xsd:string ;
+	skos:altLabel "UG"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/lvt> .
+

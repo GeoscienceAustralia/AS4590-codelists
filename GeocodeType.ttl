@@ -1,0 +1,235 @@
+@prefix : <http://reference.data.gov.au/def/ont/agrif#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <http://reference.data.gov.au/def/ont/gct> .
+
+<http://reference.data.gov.au/def/ont/gct> 
+    rdf:type owl:Ontology, voaf:Vocabulary ;
+    rdfs:label "AS4590 code list for geocode types"@en ;
+    rdfs:comment "The AS4590 code list for geocode types intended for implementing a standardised list of geocoded features and their abbreviations for Australia and New Zealand. It complies with the World Wide Web Consortiumâ€™s Web Ontology Language (OWL2) Recommendation."@en ;
+    dc:creator "Joseph Abhayaratna (PSMA Australia Limited)"@en ;    
+    dc:contributor "Nicholas Car"@en ;	
+    dcterms:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    dcterms:contributor <http://orcid.org/0000-0001-5075-6234> ;
+    dc:publisher "Australian Government Linked Data Working Group"@en ;
+    dcterms:publisher <http://linked.data.gov.au> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Intergovernmental Committee on Surveying and Mapping (ICSM)"@en ;
+    owl:versionInfo "0.1"@en ;
+    owl:versionIRI <http://reference.data.gov.au/def/ont/gct/0.1> ;
+    dcterms:created "2017-08-24"^^xsd:date ;
+    dcterms:modified "2017-08-24"@en ;
+    vann:preferredNamespaceUri "http://reference.data.gov.au/def/ont/gct#"^^xsd:string ;
+    vann:preferredNamespacePrefix "gct"@en .
+
+:BuildingAccessPoint rdf:type :GeocodeType ;
+	rdfs:label "Building Access Point"^^xsd:string ;
+	skos:definition "Point of access to the building."@en ;
+	skos:altLabel "BUILDING ACCESS POINT"^^xsd:string ;
+	skos:altLabel "BAP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:BuildingCentroid rdf:type :GeocodeType ;
+	rdfs:label "Building Centroid"^^xsd:string ;
+	skos:definition "Point as centre of building and lying within its bounds (e.g. for u-shaped building)."@en ;
+	skos:altLabel "BUILDING CENTROID"^^xsd:string ;
+	skos:altLabel "BC"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:CentreLineDroppedFrontage rdf:type :GeocodeType ;
+	rdfs:label "Centre-Line Dropped Frontage"^^xsd:string ;
+	skos:definition "A point on the road centre-line opposite the centre of the road frontage of an address site."@en ;
+	skos:altLabel "CENTRE-LINE DROPPED FRONTAGE"^^xsd:string ;
+	skos:altLabel "CDF"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:DrivewayFrontage rdf:type :GeocodeType ;
+	rdfs:label "Driveway Frontage"^^xsd:string ;
+	skos:definition "Centre of driveway on address site frontage."@en ;
+	skos:altLabel "DRIVEWAY FRONTAGE"^^xsd:string ;
+	skos:altLabel "DF"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:ElectricityConnectionPoint rdf:type :GeocodeType ;
+	rdfs:label "Electricity Connection Point"^^xsd:string ;
+	skos:definition "Electricity connection point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "ELECTRICITY CONNECTION POINT"^^xsd:string ;
+	skos:altLabel "ECP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:ElectricityMeter rdf:type :GeocodeType ;
+	rdfs:label "Electricity Meter"^^xsd:string ;
+	skos:definition "Electricity meter point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "ELECTRICITY METER"^^xsd:string ;
+	skos:altLabel "EM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:EmergencyAccess rdf:type :GeocodeType ;
+	rdfs:label "Emergency Access"^^xsd:string ;
+	skos:definition "Specific building or property access point for emergency services."@en ;
+	skos:altLabel "EMERGENCY ACCESS"^^xsd:string ;
+	skos:altLabel "EA"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:EmergencyAccessSecondary rdf:type :GeocodeType ;
+	rdfs:label "Emergency Access Secondary"^^xsd:string ;
+	skos:definition "Specific building or property secondary access point for emergency services."@en ;
+	skos:altLabel "EMERGENCY ACCESS SECONDARY"^^xsd:string ;
+	skos:altLabel "EAS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:FrontDoorAccess rdf:type :GeocodeType ;
+	rdfs:label "Front Door Access"^^xsd:string ;
+	skos:definition "Front door of building."@en ;
+	skos:altLabel "FRONT DOOR ACCESS"^^xsd:string ;
+	skos:altLabel "FDA"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:FrontageCentre rdf:type :GeocodeType ;
+	rdfs:label "Frontage Centre"^^xsd:string ;
+	skos:definition "Point on the centre of the address site frontage."@en ;
+	skos:altLabel "FRONTAGE CENTRE"^^xsd:string ;
+	skos:altLabel "FC"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:FrontageCentreSetback rdf:type :GeocodeType ;
+	rdfs:label "Frontage Centre Setback"^^xsd:string ;
+	skos:definition "A point set back from the centre of the road frontage within an address site."@en ;
+	skos:altLabel "FRONTAGE CENTRE SETBACK"^^xsd:string ;
+	skos:altLabel "FCS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:GapGeocode rdf:type :GeocodeType ;
+	rdfs:label "Gap Geocode"^^xsd:string ;
+	skos:definition "Point programmatically allocated during the g-naf production process proportionally between adjacent address locations (based on number_first)."@en ;
+	skos:altLabel "GAP GEOCODE"^^xsd:string ;
+	skos:altLabel "GG"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:GasConnectionPoint rdf:type :GeocodeType ;
+	rdfs:label "Gas Connection Point"^^xsd:string ;
+	skos:definition "Gas connection point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "GAS CONNECTION POINT"^^xsd:string ;
+	skos:altLabel "GCP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:GasMeter rdf:type :GeocodeType ;
+	rdfs:label "Gas Meter"^^xsd:string ;
+	skos:definition "Gas meter point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "GAS METER"^^xsd:string ;
+	skos:altLabel "GM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:InternetConnectionPoint rdf:type :GeocodeType ;
+	rdfs:label "Internet Connection Point"^^xsd:string ;
+	skos:definition "Internet connection point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "INTERNET CONNECTION POINT"^^xsd:string ;
+	skos:altLabel "ICP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:Letterbox rdf:type :GeocodeType ;
+	rdfs:label "Letterbox"^^xsd:string ;
+	skos:definition "Place where mail is deposited."@en ;
+	skos:altLabel "LETTERBOX"^^xsd:string ;
+	skos:altLabel "LB"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:Locality rdf:type :GeocodeType ;
+	rdfs:label "Locality"^^xsd:string ;
+	skos:definition "Point representing a locality"@en ;
+	skos:altLabel "LOCALITY"^^xsd:string ;
+	skos:altLabel "LOC"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:PropertyAccessPoint rdf:type :GeocodeType ;
+	rdfs:label "Property Access Point"^^xsd:string ;
+	skos:definition "Access point (centre of) at the road frontage of the property."@en ;
+	skos:altLabel "PROPERTY ACCESS POINT"^^xsd:string ;
+	skos:altLabel "PAP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:PropertyAccessPointSetback rdf:type :GeocodeType ;
+	rdfs:label "Property Access Point Setback"^^xsd:string ;
+	skos:definition "A point set back from the (centre of the) access point at the road frontage of the property."@en ;
+	skos:altLabel "PROPERTY ACCESS POINT SETBACK"^^xsd:string ;
+	skos:altLabel "PAPS"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:PropertyCentroid rdf:type :GeocodeType ;
+	rdfs:label "Property Centroid"^^xsd:string ;
+	skos:definition "Point of centre of parcels making up a property and lying within its boundaries (e.g. for l-shaped property)."@en ;
+	skos:altLabel "PROPERTY CENTROID"^^xsd:string ;
+	skos:altLabel "PC"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:PropertyCentroidManual rdf:type :GeocodeType ;
+	rdfs:label "Property Centroid Manual"^^xsd:string ;
+	skos:definition "Point manually placed approximately at centre of parcels making up a property and lying within its boundaries (e.g. for l-shaped property)."@en ;
+	skos:altLabel "PROPERTY CENTROID MANUAL"^^xsd:string ;
+	skos:altLabel "PCM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:SewerageConnectionPoint rdf:type :GeocodeType ;
+	rdfs:label "Sewerage Connection Point"^^xsd:string ;
+	skos:definition "Sewerage connection point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "SEWERAGE CONNECTION POINT"^^xsd:string ;
+	skos:altLabel "SCP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:StreetLocality rdf:type :GeocodeType ;
+	rdfs:label "Street Locality"^^xsd:string ;
+	skos:definition "Point representing the extent of a street within a locality"@en ;
+	skos:altLabel "STREET LOCALITY"^^xsd:string ;
+	skos:altLabel "STL"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:TelephoneConnectionPoint rdf:type :GeocodeType ;
+	rdfs:label "Telephone Connection Point"^^xsd:string ;
+	skos:definition "Telephone connection point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "TELEPHONE CONNECTION POINT"^^xsd:string ;
+	skos:altLabel "TCP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:UnitCentroid rdf:type :GeocodeType ;
+	rdfs:label "Unit Centroid"^^xsd:string ;
+	skos:definition "Point at centre of unit and lying within its bounds (e.g. for u-shaped unit)."@en ;
+	skos:altLabel "UNIT CENTROID"^^xsd:string ;
+	skos:altLabel "UC"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:UnitCentroidManual rdf:type :GeocodeType ;
+	rdfs:label "Unit Centroid Manual"^^xsd:string ;
+	skos:definition "Point manually placed approximately at centre of unit and lying within its bounds (e.g. for u-shaped unit)."@en ;
+	skos:altLabel "UNIT CENTROID MANUAL"^^xsd:string ;
+	skos:altLabel "UCM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:Unknown rdf:type :GeocodeType ;
+	rdfs:label "Unknown"^^xsd:string ;
+	skos:definition "The type of real world feature the point represents is not known."@en ;
+	skos:altLabel "UNKNOWN"^^xsd:string ;
+	skos:altLabel "UNK"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:WaterConnectionPoint rdf:type :GeocodeType ;
+	rdfs:label "Water Connection Point"^^xsd:string ;
+	skos:definition "Water connection point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "WATER CONNECTION POINT"^^xsd:string ;
+	skos:altLabel "WCP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+
+:WaterMeter rdf:type :GeocodeType ;
+	rdfs:label "Water Meter"^^xsd:string ;
+	skos:definition "Water meter point (e.g. box, or underground chamber)."@en ;
+	skos:altLabel "WATER METER"^^xsd:string ;
+	skos:altLabel "WM"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/gct> .
+

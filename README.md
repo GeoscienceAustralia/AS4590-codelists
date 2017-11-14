@@ -1,13 +1,11 @@
-# Title of repository
-A single line description about the repo.
+# AS4590 Codelists
+OWL ontology registers - lists - of types of items required by the AS4590 standard.
 
-Multiple lines about the repo. You may include subheadings from here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Codelists or lists of terms required by data models are often delivered as human-readable tables, XML files or even SKOS vocabulary collections. This set of codelists are slightly more powerful: they are registers of types items - items with a specific class indicated. The types are as per the AS4590 requirements, FlatType, GeocodeType etc. but the objects are also fundamentally OWL class objects meaning they can be described with quite a range of OWL properties, includeing simple vocabulary properties used by SKOS. This allows these code list items to be used in SPARQL querying and for validation with more rigour and specificity than pure concept lists objects can.
 
 
-## Notes on the use of this README template.
-1. Replace the text of the license link statemebt below to refer to your actual license. When in doubt about which license to use, use Creative Commons 4.0 (referenced by default).
-2. Include a copy of your chosen license' deed in a file called LICESE in the root folder of this repository. The default is the Creative Commons 4.0 deed.
-3. In the Contacts section, at include the details, name & email address, of at least one GA person. You can include any number greater than one and can add any notes you like as to their role regarding this repo or at GA. If you have an academic identifier, as per the example below using an ORCID, include that too.
+## Purpose
+The terms in these code lists will be used with the AS4590 ontology which is being created to describe the data within the Geocoded NAtional Address File, GNAF.
 
 
 ## License
@@ -16,6 +14,12 @@ This repository is licensed under Creative Commons 4.0 International. See the [L
 
 ## Contacts
 Author:  
+**Joseph Abhayaratna**  
+*Chief Technical Officer*  
+PSMA Australia  
+<joseph.abhayaratna@psma.com.au>  
+
+Contributor:  
 **Nicholas Car**  
 *Data Architect*  
 Geoscience Australia  

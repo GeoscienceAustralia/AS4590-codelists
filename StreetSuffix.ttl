@@ -1,0 +1,145 @@
+@prefix : <http://reference.data.gov.au/def/ont/agrif#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@base <http://reference.data.gov.au/def/ont/sts> .
+
+<http://reference.data.gov.au/def/ont/sts> 
+    rdf:type owl:Ontology, voaf:Vocabulary ;
+    rdfs:label "AS4590 code list for street suffixes"@en ;
+    rdfs:comment "The AS4590 code list for street suffixes intended for implementing a standardised list of street suffixes and their abbreviations for Australia and New Zealand. It complies with the World Wide Web Consortiumâ€™s Web Ontology Language (OWL2) Recommendation."@en ;
+    dc:creator "Joseph Abhayaratna (PSMA Australia Limited)"@en ;    
+    dc:contributor "Nicholas Car"@en ;	
+    dcterms:contributor <http://orcid.org/0000-0002-8742-7730> ;
+    dcterms:contributor <http://orcid.org/0000-0001-5075-6234> ;
+    dc:publisher "Australian Government Linked Data Working Group"@en ;
+    dcterms:publisher <http://linked.data.gov.au> ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:rights "Intergovernmental Committee on Surveying and Mapping (ICSM)"@en ;
+    owl:versionInfo "0.1"@en ;
+    owl:versionIRI <http://reference.data.gov.au/def/ont/sts/0.1> ;
+    dcterms:created "2017-08-24"^^xsd:date ;
+    dcterms:modified "2017-08-24"@en ;
+    vann:preferredNamespaceUri "http://reference.data.gov.au/def/ont/sts#"^^xsd:string ;
+    vann:preferredNamespacePrefix "sts"@en .
+
+:Central rdf:type :StreetSuffix ;
+	rdfs:label "Central"^^xsd:string ;
+	skos:altLabel "CENTRAL"^^xsd:string ;
+	skos:altLabel "CN"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Deviation rdf:type :StreetSuffix ;
+	rdfs:label "Deviation"^^xsd:string ;
+	skos:altLabel "DEVIATION"^^xsd:string ;
+	skos:altLabel "DE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:East rdf:type :StreetSuffix ;
+	rdfs:label "East"^^xsd:string ;
+	skos:altLabel "EAST"^^xsd:string ;
+	skos:altLabel "E"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Extension rdf:type :StreetSuffix ;
+	rdfs:label "Extension"^^xsd:string ;
+	skos:altLabel "EXTENSION"^^xsd:string ;
+	skos:altLabel "EX"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Inner rdf:type :StreetSuffix ;
+	rdfs:label "Inner"^^xsd:string ;
+	skos:altLabel "INNER"^^xsd:string ;
+	skos:altLabel "IN"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Lower rdf:type :StreetSuffix ;
+	rdfs:label "Lower"^^xsd:string ;
+	skos:altLabel "LOWER"^^xsd:string ;
+	skos:altLabel "LR"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Mall rdf:type :StreetSuffix ;
+	rdfs:label "Mall"^^xsd:string ;
+	skos:altLabel "MALL"^^xsd:string ;
+	skos:altLabel "ML"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:North rdf:type :StreetSuffix ;
+	rdfs:label "North"^^xsd:string ;
+	skos:altLabel "NORTH"^^xsd:string ;
+	skos:altLabel "N"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:NorthEast rdf:type :StreetSuffix ;
+	rdfs:label "North East"^^xsd:string ;
+	skos:altLabel "NORTH EAST"^^xsd:string ;
+	skos:altLabel "NE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:NorthWest rdf:type :StreetSuffix ;
+	rdfs:label "North West"^^xsd:string ;
+	skos:altLabel "NORTH WEST"^^xsd:string ;
+	skos:altLabel "NW"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Off rdf:type :StreetSuffix ;
+	rdfs:label "Off"^^xsd:string ;
+	skos:altLabel "OFF"^^xsd:string ;
+	skos:altLabel "OF"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:On rdf:type :StreetSuffix ;
+	rdfs:label "On"^^xsd:string ;
+	skos:altLabel "ON"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Outer rdf:type :StreetSuffix ;
+	rdfs:label "Outer"^^xsd:string ;
+	skos:altLabel "OUTER"^^xsd:string ;
+	skos:altLabel "OT"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Overpass rdf:type :StreetSuffix ;
+	rdfs:label "Overpass"^^xsd:string ;
+	skos:altLabel "OVERPASS"^^xsd:string ;
+	skos:altLabel "OP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:South rdf:type :StreetSuffix ;
+	rdfs:label "South"^^xsd:string ;
+	skos:altLabel "SOUTH"^^xsd:string ;
+	skos:altLabel "S"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:SouthEast rdf:type :StreetSuffix ;
+	rdfs:label "South East"^^xsd:string ;
+	skos:altLabel "SOUTH EAST"^^xsd:string ;
+	skos:altLabel "SE"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:SouthWest rdf:type :StreetSuffix ;
+	rdfs:label "South West"^^xsd:string ;
+	skos:altLabel "SOUTH WEST"^^xsd:string ;
+	skos:altLabel "SW"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:Upper rdf:type :StreetSuffix ;
+	rdfs:label "Upper"^^xsd:string ;
+	skos:altLabel "UPPER"^^xsd:string ;
+	skos:altLabel "UP"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
+:West rdf:type :StreetSuffix ;
+	rdfs:label "West"^^xsd:string ;
+	skos:altLabel "WEST"^^xsd:string ;
+	skos:altLabel "W"^^xsd:string ;
+	rdfs:isDefinedBy <http://reference.data.gov.au/def/ont/sts> .
+
